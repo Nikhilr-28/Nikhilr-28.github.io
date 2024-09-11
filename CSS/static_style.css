@@ -1,0 +1,34 @@
+h6 {
+    color: black;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-indent: 300px;
+    
+}
+p {
+    display: inline;
+    a{
+        text-decoration:aliceblue;
+        text-indent: 300px;
+    }
+    
+    
+}
+.big_blue {
+    background-color: blue;
+    color: white;
+    border: 1px blue;
+    margin: 30px;
+}
+.Tanner {
+    background-image: url("images/images/lawyer.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    background-position-y: 115px;
+    background-size: 1710px 750px;
+    -webkit-transform: scale(1.1); 
+    padding: 0px;
+    max-height: 100%;
+    object-position: 70% 15%;
+}
