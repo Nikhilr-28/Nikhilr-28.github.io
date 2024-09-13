@@ -12,7 +12,9 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/images/glasses.png');
+    background-image:  url('images/images/glasses.png');
+    background-color: aliceblue;
+    background-blend-mode: luminosity;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -21,11 +23,12 @@ body::before {
 }
 
 
-.navbar {
+.top_left_navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
+    align-items:end;
+    font-size: small;
+    padding: 43px 270px;
     background-color: white;
 }
 
@@ -33,42 +36,48 @@ body::before {
 .menu a {
     color: black;
     text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+    font-weight: medium;
+    font-size: 15px;
+    
 }
 
 
-.nikhils {
+.top_right_navbar {
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0px 50px;
 }
 
 
-.nikhils li {
+.top_right_navbar li {
     margin-left: 20px;
 }
 
 
-.nikhils a {
-    color: black;
+.top_right_navbar a {
+    color: #c1c1c1;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 13px;
+    left: 10px;
     transition: color 0.3s;
+   
 }
 
 
-.nikhils a:hover {
-    color: grey;
+.top_right_navbar a:hover {
+    color: black;
 }
 
 
 .Tanner {
     width: 100%;
-    height: 690px;
+    height: 757px;
+    padding: 0px -400px;
+    filter: brightness(77%);
     overflow: hidden;
     position: relative;
+ 
 }
 
 
@@ -84,10 +93,10 @@ body::before {
 .nav-box {
     position: absolute;
     top: 140px;
-    left: 255px;
-    width: 355px;
-    height: 59%;
-    background-color: rgb(50, 20, 181);
+    left: 280px;
+    width: 400px;
+    height: 61%;
+    background-color: #093b61;
     padding: 40px;
     padding-top: 60px;
     box-sizing: border-box;
@@ -96,7 +105,7 @@ body::before {
 
 .text {
     margin: 0;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 
@@ -120,11 +129,12 @@ body::before {
 
 
 .signup-button {
-    background-color: yellow;
+    background-color: #f8d814;
     color: black;
+    height: 50px;
     padding: 10px 20px;
     font-size: 12px;
-    cursor: pointer;
+    cursor:default;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -135,21 +145,21 @@ body::before {
 }*/
 
 
-.mycontainer {
+.main_dubba {
     display: flex;
-    justify-content: space-between;
+    justify-content:first baseline;
+    font-weight: 650;
     line-height: 1.5;
-    gap: 2px;
-    padding-left: 250px;
-    padding-right: 2px;
-    padding-top: 125px;
-    padding-bottom: 125px;
-    font-size: 13px;
+    padding-left: 275px;
+    padding-right: 133px;
+    padding-top: 142px;
+    padding-bottom: 110px;
+    font-size: 12.5px;
     background-color: white;
 }
 
 
-.mycontainer div {
+.main_dubba div {
     flex: 1;
     padding: 10px;  
     text-align: justify;
@@ -163,8 +173,7 @@ body::before {
 }*/
 
 
-.mycontainer2 {
-    background-color: rgba(221, 221, 221, 0.83);
+.dubba2 {
     display: block;
     justify-content: center;
     align-items: center;
@@ -177,34 +186,37 @@ body::before {
 }
 
 
-.mycontainer2 p {
+.dubba2 p {
     margin: 0;
     font-size: 18px;
     color: black;
 }
 
 
-.mycontainer3 {
+.dubba3 {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    padding-left: 250px;
+    gap: 35px;
+    padding-left: 250px;                            
     padding-right: 250px;
     padding-top: 125px;
     padding-bottom: 125px;
-    font-size: 14px;
+    font-size: 12px;
    
 }
 
 
-.mycontainer3 div {
+.dubba3 div {
     flex: 1;
-    padding: 20px;
-    border: 1px solid black;
+    padding: 90px;
+    border: 1px solid white;
     background-color: white;
+    background-image: linear-gradient(0deg, lightgrey 0.5px, transparent 1px), 
+    linear-gradient(90deg, lightgrey 0.5px, transparent 1px);
+    padding-top: 150px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     box-sizing: border-box;
     line-height: 2;
@@ -222,11 +234,11 @@ body::before {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-
+/*
 .buynow-button:hover {
     background-color: rgb(3, 0, 12);
     transform: scale(1.05);
-}
+}*/
 
 
 .Tanner2 {
@@ -249,7 +261,7 @@ body::before {
 }
 
 
-.Tanner2 h3, .Tanner2 p {
+.Tanner2 h3, .Tanner2 p {        /* I have used inspiration from chatgpt for this section of CSS; I have changed values accordingly and ommitted` some of the properties which I deemed not necessary*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -259,48 +271,50 @@ body::before {
     margin: 0;
 }
 
-
-.Tanner2 h3 {
+.Tanner2 h3 {                        /* I have used inspiration from chatgpt for this section of CSS; I have changed values accordingly and ommitted` some of the properties which I deemed not necessary*/
     font-size: 24px;
+    font-weight: 500;
     margin-bottom: 10px;
+    padding-bottom: 108px;
+    padding-right: 8px;
 }
 
-
-.Tanner2 p {
-    font-size: 12px;
-    margin-top: 30px;
+.Tanner2 p {                        /* I have used inspiration from chatgpt for this section of CSS; I have changed values accordingly and ommitted` some of the properties which I deemed not necessary*/
+    font-size: 12.7px;
+    margin-bottom: 10px;
+    padding-bottom: 47px;
+    padding-right: 0px;
 }
 
-
-.Tanner2::before {
+.Tanner2::before {                        /* I have used inspiration from chatgpt for this section of CSS; I have changed values accordingly and ommitted` some of the properties which I deemed not necessary*/
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: rgba(3, 44, 69, 0.9);
+    
     pointer-events: none;      
     z-index: 1;
 }
 
-
 .trynow-button {
     position: absolute;
-    top: calc(50% + 80px);
-    left: 50%;
+    top: calc(50% + 8px);
+    left: 51%;
     transform: translateX(-50%);
-    background-color: yellow;
+    background-color: #f8d814;
     color: black;
-    padding: 20px 30px;
-    font-size: 12px;
-    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 14px;
+    cursor:default;
     transition: background-color 0.3s, transform 0.3s;
     z-index: 2;
 }
 
 
-.mycontainer4 {
+.dubba4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,17 +322,17 @@ body::before {
     height: 200px;
     text-align: center;
     padding: 20px;  
-    background-color: rgb(3, 24, 60);
+    background-color: rgb(25, 31, 41);
 }
 
 
-.mycontainer4 h4 {
+.dubba4 h4 {
     margin-bottom: 10px;
     color: white;
 }
 
 
-.mycontainer4 p {
+.dubba4 p {
     margin: 0;
     color: white;
     margin-top: 5px;
